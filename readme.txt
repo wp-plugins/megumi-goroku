@@ -2,8 +2,8 @@
 Contributors: Webnist
 Donate link: 
 Tags: joke, rss
-Requires at least: 3.2.1
-Tested up to: 2.9
+Requires at least: 2.9
+Tested up to: 3.2.1
 Stable tag: 1.3.0
 
 To view the Megumi Goroku
