@@ -1,0 +1,17 @@
+@charset "utf-8";
+#megumi-goroku-text {
+	font: normal 16px Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+	margin: 0;
+	padding: 6px 8px 5px 21px;
+	background: url(../images/megumi-logo.gif) no-repeat left center;
+	float: left;
+}
+	#megumi-goroku-text a {
+		color: #464646;
+	}
+
+/* ************************************************ 
+ * Feeling!!
+ * It is inquiry in the webnist
+ * webnist@webnist.org
+ * ************************************************ */
