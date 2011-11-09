@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: Webnist
+Contributors: Webnist, megumithemes
 Donate link: 
 Tags: joke, rss
 Requires at least: 2.9
