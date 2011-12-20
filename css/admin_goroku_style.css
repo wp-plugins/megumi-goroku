@@ -6,6 +6,9 @@
 	background: url(../images/megumi-logo.gif) no-repeat left center;
 	float: left;
 }
+	div#megumi-goroku-text {
+		float: none;
+	}
 	#megumi-goroku-text a {
 		color: #464646;
 	}

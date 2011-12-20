@@ -3,8 +3,8 @@ Contributors: Webnist, megumithemes
 Donate link: 
 Tags: joke, rss
 Requires at least: 2.9
-Tested up to: 3.2.1
-Stable tag: 1.3.0
+Tested up to: 3.3
+Stable tag: 1.3.5
 
 To view the Megumi Goroku
 
@@ -19,6 +19,9 @@ This is not just a plug-in. Words that are used in pairs because the business. I
 
 
 == Changelog ==
+* **1.3.5**
+* Fixed for version 3.3
+
 * **1.3.0**
 * Public release
 

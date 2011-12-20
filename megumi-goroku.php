@@ -2,7 +2,7 @@
 /*
 Plugin Name: Megumi Goroku
 Plugin URI: http://www.megumi-goroku.com
-Version: 1.3.0
+Version: 1.3.5
 Description: This is not just a plug-in. Words that are used in pairs because the business. If this plugin is enabled and displays a random sayings from the Megumi Goroku on all management right of the screen.
 Author: Webnist
 Author URI: http://webnist.jp
@@ -20,6 +20,7 @@ load_plugin_textdomain( 'megumi-goroku', false, '/megumi-goroku/languages' );
 
 /* *** Get Megumi Goroku *** */
 function get_megumi_goroku() {
+	global $wp_version;
 	$rss_content = get_transient( 'megumi_goroku_key' );
 	if ( $rss_content === false ) {
 		$rss_url = 'http://www.megumi-goroku.com/feed/'; // Delivery number 100.
@@ -37,7 +38,11 @@ function get_megumi_goroku() {
 	$key = array_rand( $rss_content );
 	$title = $rss_content[$key]['title'];
 	$link = $rss_content[$key]['link'];
-	$output = '<p id="megumi-goroku-text"><a href="' . $link . '" target="_blank">' . $title . '</a></p>';
+	if ( version_compare( $wp_version, '3.3', '<' ) ) {
+		$output = '<p id="megumi-goroku-text"><a href="' . $link . '" target="_blank">' . $title . '</a></p>';
+	} else {
+		$output = '<div id="megumi-goroku-text"><a href="' . $link . '" target="_blank">' . $title . '</a></div>';
+	}
 	return $output;
 }
 
